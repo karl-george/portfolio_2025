@@ -1,8 +1,15 @@
+import Navbar from '@/components/Navbar';
+
 export default function Home() {
   return (
-    <div className='h-screen bg-gradient-to-l from-[#536976] to-[#292e49]'>
+    <div className=''>
+      {/* Nav Bar */}
+      <Navbar />
+
       {/* Hero Section */}
-      <div></div>
+      <div className='bg-bgWhite flex flex-1 min-h-screen'>
+        <h1>Karl George</h1>
+      </div>
 
       {/* Projects */}
 
