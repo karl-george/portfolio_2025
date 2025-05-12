@@ -73,14 +73,16 @@ export default function Navbar() {
   );
 
   return (
-    <nav className='fixed bottom-8 left-1/2 -translate-x-1/2 z-50'>
-      <ExpandableTabs
-        tabs={navItems}
-        activeColor='text-blue-400'
-        className='border-blue-400 rounded-3xl py-2 px-4'
-        onChange={handleTabChange}
-        activeIndex={activeIndexValue}
-      />
-    </nav>
+    <div className='flex justify-center items-center'>
+      <nav className='fixed bottom-8 z-50'>
+        <ExpandableTabs
+          tabs={navItems}
+          activeColor='text-blue-400'
+          className='border-blue-400 rounded-3xl py-2 px-4'
+          onChange={handleTabChange}
+          activeIndex={activeIndexValue}
+        />
+      </nav>
+    </div>
   );
 }
