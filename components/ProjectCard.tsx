@@ -29,7 +29,7 @@ const ProjectCard = ({
           className='object-cover'
         />
 
-        <div className='p-4 md:p-6 rounded-lg bg-gray-800 w-11/12'>
+        <div className='p-4 md:p-6 rounded-lg bg-gray-800 w-11/12 h-full'>
           <div className='flex flex-row flex-wrap gap-2 justify-center items-center mb-6'>
             {tech?.map((item, index) => (
               <ProjectTech tech={item} key={index} />
@@ -38,7 +38,7 @@ const ProjectCard = ({
           <h3 className='text-lg md:text-xl font-semibold mb-2 text-white'>
             {title}
           </h3>
-          <p className='text-sm md:text-base text-muted-foreground mb-6'>
+          <p className='text-sm md:text-base text-muted-foreground mb-6 max-w-2xl'>
             {description}
           </p>
           <div className='py-2 px-4 bg-gray-300 rounded-md flex mx-auto w-fit'>
