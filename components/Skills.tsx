@@ -2,7 +2,7 @@ import { skills } from '@/constants/data';
 
 const Skills = () => {
   return (
-    <section id='skills' className='relative py-16 md:py-20 px-4'>
+    <section id='skills' className='relative py-8 md:py-20 px-4'>
       <div className='container mx-auto'>
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-6 text-center text-white'>
           Skills
