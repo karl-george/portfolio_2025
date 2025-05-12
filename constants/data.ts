@@ -18,7 +18,7 @@ export const projects = [
   {
     title: 'CoinFlow',
     description:
-      'CoinFlow allows users to track current market data of various crypto currencies. The app features a modern design and a user-friendly interface, making it easy for users to find and save their preffered crypto coins.',
+      'CoinFlow allows users to track current market data of various crypto currencies. The app features a modern design and a user-friendly interface, making it easy for users to find and save their preferred crypto coins.',
     image: '/images/cf-details.png',
     tech: ['React Native', 'Expo', 'API', 'Clerk', 'Zustand'],
     link: 'https://github.com/karl-george/coinflow',
