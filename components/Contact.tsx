@@ -1,5 +1,4 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
-import Link from 'next/link';
 
 const Contact = () => {
   return (
@@ -9,7 +8,7 @@ const Contact = () => {
           Let's Chat!
         </h2>
         <div className='max-w-md mx-auto text-center'>
-          <p className='w-2/3 md:w-full mx-auto text-base md:text-lg text-muted-foreground mb-12 md:mb-12 text-center'>
+          <p className='w-[95%] md:w-full mx-auto text-base md:text-lg text-muted-foreground mb-12 md:mb-12 text-center'>
             If you're interested in working together, feel free to reach out.
           </p>
         </div>

@@ -1,9 +1,4 @@
 import { projects } from '@/constants/data';
-import React from 'react';
-import { Card } from './ui/card';
-import { Button } from './ui/button';
-import { ExternalLink } from 'lucide-react';
-import Image from 'next/image';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -13,7 +8,7 @@ const Projects = () => {
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-6 text-center text-white'>
           Projects
         </h2>
-        <p className='w-2/3 md:w-1/3 mx-auto text-base md:text-lg text-muted-foreground mb-16 md:mb-16 text-center'>
+        <p className='w-[95%] md:w-1/3 mx-auto text-base md:text-lg text-muted-foreground mb-16 md:mb-16 text-center'>
           A small collection of my most recent projects to showcase my skills
           and experience.
         </p>
