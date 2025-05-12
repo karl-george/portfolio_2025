@@ -294,10 +294,6 @@ const particlesConfig = {
         height: 1080,
         // area: 1200,
       },
-      limit: {
-        mode: 'delete',
-        value: 0,
-      },
       value: 90, // Amount of particles on screen
     },
     opacity: {
