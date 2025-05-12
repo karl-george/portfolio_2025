@@ -1,7 +1,6 @@
-import React from 'react';
-import { TextFlip } from './TextFlip';
-import { Button } from './ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { TextFlip } from './TextFlip';
+import { HoverButton } from './ui/HoverButton';
 
 const Hero = () => {
   return (
@@ -23,19 +22,55 @@ const Hero = () => {
             experiences. Focused on building cross-platform applications that
             combine elegance with functionality.
           </p>
-          <div className='flex justify-center gap-4'>
-            <Button variant='outline' className='gap-3 items-center'>
-              <Github className='h-5 w-5' />
-              Github
-            </Button>
-            <Button variant='outline' className='gap-3 items-center'>
-              <Linkedin className='h-5 w-5' />
-              Linkedin
-            </Button>
-            <Button variant='outline' className='gap-3 items-center'>
-              <Mail className='h-5 w-5' />
-              Email
-            </Button>
+          <div className='flex flex-col md:flex-row justify-center items-center md:gap-4 gap-6'>
+            <div className='flex items-center justify-center'>
+              <a href={'https://github.com/karl-george'} target='_blank'>
+                <HoverButton
+                  startColor='#4ade80'
+                  endColor='#22d3ee'
+                  animationIntensity='medium'
+                  className='inline-flex items-center gap-2'
+                >
+                  <span className='relative z-10 drop-shadow-md inline-flex items-center gap-2'>
+                    <Github className='h-5 w-5 shrink-0' />
+                    <p className='text-sm md:text-base'>Github</p>
+                  </span>
+                </HoverButton>
+              </a>
+            </div>
+            <div className='flex items-center justify-center'>
+              <a
+                href={'https://www.linkedin.com/in/karlgeorge87'}
+                target='_blank'
+              >
+                <HoverButton
+                  startColor='#4ade80'
+                  endColor='#22d3ee'
+                  animationIntensity='medium'
+                  className='inline-flex items-center gap-2'
+                >
+                  <span className='relative z-10 drop-shadow-md inline-flex items-center gap-2'>
+                    <Linkedin className='h-5 w-5 shrink-0' />
+                    <p className='text-sm md:text-base'>Linkedin</p>
+                  </span>
+                </HoverButton>
+              </a>
+            </div>
+            <div className='flex items-center justify-center'>
+              <a href={'mailto:karlgeorge87@gmail.com'} target='_blank'>
+                <HoverButton
+                  startColor='#4ade80'
+                  endColor='#22d3ee'
+                  animationIntensity='medium'
+                  className='inline-flex items-center gap-2'
+                >
+                  <span className='relative z-10 drop-shadow-md inline-flex items-center gap-2'>
+                    <Mail className='h-5 w-5 shrink-0' />
+                    <p className='text-sm md:text-base'>Email</p>
+                  </span>
+                </HoverButton>
+              </a>
+            </div>
           </div>
         </div>
       </div>
