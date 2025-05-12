@@ -1,7 +1,7 @@
 import { Github } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import ProjectTech from './ProjectTech';
+import { HoverButton } from './ui/HoverButton';
 
 interface ProjectCardProps {
   image: string;
@@ -41,12 +41,20 @@ const ProjectCard = ({
           <p className='text-sm md:text-base text-muted-foreground mb-6 max-w-2xl'>
             {description}
           </p>
-          <div className='py-2 px-4 bg-gray-300 rounded-md flex mx-auto w-fit'>
-            <Link href={link}>
-              <p className='flex flex-row items-center gap-2'>
-                View Project <Github size={16} />
-              </p>
-            </Link>
+          <div className='flex items-center justify-center'>
+            <a href={link} target='_blank'>
+              <HoverButton
+                startColor='#4ade80'
+                endColor='#22d3ee'
+                animationIntensity='medium'
+                className='inline-flex items-center gap-2'
+              >
+                <span className='relative z-10 drop-shadow-md inline-flex items-center gap-2'>
+                  <Github className='h-5 w-5 shrink-0' />
+                  <p className='text-sm md:text-base'>View Project</p>
+                </span>
+              </HoverButton>
+            </a>
           </div>
         </div>
       </div>
