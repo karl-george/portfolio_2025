@@ -1,6 +1,6 @@
 import React from 'react';
-import { TextFlip } from '../TextFlip';
-import { Button } from './button';
+import { TextFlip } from './TextFlip';
+import { Button } from './ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
           <p className='text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8'>
             React Native Developer
           </p>
-          <p className='w-[80%] md:w-[50%] mx-auto text-base md:text-lg text-muted-foreground mb-8'>
+          <p className='w-[98%] md:w-[50%] mx-auto text-base md:text-lg text-muted-foreground mb-8'>
             Passionate about creating innovative and user-friendly mobile
             experiences. Focused on building cross-platform applications that
             combine elegance with functionality.
