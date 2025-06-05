@@ -13,7 +13,7 @@ export const projects = [
       'GroceryGo is a mobile application designed to allow users to create and manage their shopping lists. Users can create and delete lists and then store and delete items in those lists.',
     image: '/images/shopping_list.png',
     tech: ['React Native', 'Expo', 'SQLite', 'Drizzle', 'Sentry', 'NativeWind'],
-    link: 'https://github.com/karl-george/shoppping_list',
+    link: 'https://github.com/karl-george/grocerygo',
   },
   {
     title: 'CoinFlow',
